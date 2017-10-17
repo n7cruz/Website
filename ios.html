@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="styles/portfolioMore.css" rel="stylesheet" type="text/css" />
+
+	<title>Nicolas Cruz</title>
+</head>
+
+<body>
+
+	<div id="bg">
+		<div id="overlay"></div>
+		<header>
+			<div class="container">
+				<nav>
+					<h1><a href='index.html'>Nicolas Cruz </h1>
+					<ul>
+						<li><a href='portfolio.html'>Portfolio</a></li>
+						<li><a href='resume.html'>Resume</a></li>
+						<li><a href='transcript.html'>Transcript</a></li>
+						<li><a href='bio.html'>Bio</a></li>
+						<li><a href='contact.html'>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class = "vertical-center">
+				<div id"largeScreens">
+					<div id="screen1Large" class="col-xs-12 col-md-1" style="display:none;">
+						<a href="ios.html" class="thumbnail">
+							<img src="styles/screen1half.jpg" alt="...">
+						</a>
+					</div>
+					<div id="screen2Large" class="col-xs-12 col-md-1" style="display:none;">
+						<a href="ios.html" class="thumbnail">
+							<img src="styles/screen2half.png" alt="...">
+						</a>
+					</div>
+					<div id="screen3Large" class="col-xs-12 col-md-1" style="display:none;">
+						<a href="ios.html" class="thumbnail">
+							<img src="styles/screen3half.jpg" alt="...">
+						</a>
+					</div>
+				</div>
+				<div id="iosScreens" class="container">
+					<div class="row">
+						<div class="col-xs-6 col-md-4">
+							<a href="#" class="thumbnail" onclick="showS1()">
+								<img src="styles/screen1min.jpg" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="#" class="thumbnail" onclick="showS2()">
+								<img src="styles/screen2min.png" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="#" class="thumbnail" onclick="showS3()">
+								<img src="styles/screen3min.jpg" alt="...">
+							</a>
+						</div>
+					</div>
+					<p>
+						This IOS application was a semester long 3 person group assignment with a reduced scope. It was built on XCode with SWIFT, indexed by Elasticsearch, and hosted on an SQL server by AWS. REST APIs were also managed by Elasticsearch, and this entire application served as mostly an exploration for this emergent technology. Elasticsearch is a RESTful search and anlytics engine also capable of being a small data store.
+					</p>
+					<a href="portfolio.html" class="btn btn-primary" role="button">Back</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	function showS1() {
+		document.getElementById('screen1Large').style.display = "block";
+		document.getElementById('iosScreens').style.display = "none";
+	}
+	function showS2() {
+		document.getElementById('screen2Large').style.display = "block";
+		document.getElementById('iosScreens').style.display = "none";
+	}
+	function showS3() {
+		document.getElementById('screen3Large').style.display = "block";
+		document.getElementById('iosScreens').style.display = "none";
+	}
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

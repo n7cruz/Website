@@ -1,0 +1,107 @@
+header {
+	color: white;
+}
+
+body {
+	margin: 0;
+}
+
+header h1 {
+	margin: 0;
+	display: inline;
+	padding: 15px 0 0 15px;
+	line-height: 55px;
+	font-weight: normal;
+	font-size: 170%;
+	color: white;
+	text-decoration: none;
+}
+
+header h1 a, a:hover, a:visited, a:link, a:active {
+	color: white;
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	display: inline;
+	float: right;
+	padding: 15px 15px 0 0;
+}
+
+nav ul li a, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+nav ul li{
+	background: 111;
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 0 0 30px;
+	text-decoration:;
+}
+
+.vertical-center {
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+	margin-top: -70px;
+	display: flex;
+	align-items: center;
+}
+
+#contactdetails {
+	color: black;
+	border-radius: 5px;
+    width: 42%;
+    margin: 0px auto;
+    background-color: rgba(229,229,224,.7) !important;
+    vertical-align: middle;
+}
+
+#contactdetails table td {
+	border: none !important;
+}
+
+/* BUG */
+#contactdetails a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+#contactdetails a{
+	color:black;
+}
+
+#clicked {
+	color: white;
+	text-decoration: underline;
+}
+
+#bg {
+	background-image: url('background.JPG');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	height: 100vh;
+	z-index: 1;
+}
+
+#overlay {
+	position: absolute;
+	background-color: rgba(0,0,0,.2);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}

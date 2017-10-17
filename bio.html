@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="styles/bio.css" rel="stylesheet" type="text/css" />
+
+	<title>Nicolas Cruz</title>
+</head>
+
+<body>
+
+	<div id="bg">
+		<div id="overlay"></div>
+		<header>
+			<div class="container">
+				<nav>
+					<h1><a href='index.html'>Nicolas Cruz </h1>
+					<ul>
+						<li><a href='portfolio.html'>Portfolio</a></li>
+						<li><a href='resume.html'>Resume</a></li>
+						<li><a href='transcript.html'>Transcript</a></li>
+						<li><a id='clicked'>Bio</a></li>
+						<li><a href='contact.html'>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div id="bioText" class="container">
+
+
+			<div id="page1">
+				<p> 
+					My whole life I have always been interested in technology. I remember when I was about 12 years old, I attempted to upgrade the family computer with more RAM. Little did I know, I knocked a card loose and my father couldn't use his work computer for about week. I would inspect the web pages of the flash games I played and mess with the internals of the game, making my character rich or invincible. I was even almost suspended from school in grade 5, because I showed everyone in my grade how to get around the school's firewall with a proxy site. <br><br>
+
+					However, I did not spend my entire childhood playing with things I wasn't supposed to. I always strived for self-improvement and enrolled for the soccer, tennis and basketball teams whenever it was in season. In high school I joined the student council and was elected the school's Chairman of Sports. I was a school prefect and completed my Certificates 2 and 3 in BCT and ICT, while also completing my OP to get into university. <br><br>
+
+					Going into university it was an obvious choice of profession. I quickly enrolled in Computer Science, and before I was even 18, I was averaging a 6.3 GPA; almost achieving the max grade possible for every class I took in semester 1. In my second year I was hungrier for a little more of a challenge, and enrolled in the university's study abroad program. I also took up a few extra jobs to save up for this endeavour. At one point, I was working even 3 jobs at once, on top of a full-time study schedule.<br><br>
+
+					I would work most mornings at Mcdonalds, nights at Kmart, and weekends at a Pineapple farm, while watching the lecture recordings whenever I had time. Unfortunately this constant working, paired with the overconfidence in my achievement of semester 1, I under estimated the work load and the second semester became my lowest graded semester at university. However, I learnt quick, put my head down, and reset my priorities to bring my grades back up in semester 3. <br>
+				</p>
+			</div>
+			<div id="page2" style="display:none;">
+				<p>
+					In semesters 4 and 5, I studied overseas. For the first half of my trip, I studied at the University of Waterloo, often cited as the best school in Canada for Computer Science. After completing a term at Waterloo, I had a 4 month gap before the next study period. I travelled around Canada, North America, South America and the Caribbean during this time and worked odd jobs wherever I could to support myself. I was lucky enough to meet a retired lawyer along the way, who had just recently bought a sail boat, but was partially blind and suffered from a spinal injury. I offered a hand and for 2 months, I sailed from Miami to the Bahamas, with zero prior knowledge of sailing whatsoever. For the other 2 months, I had enough money for a plane ticket to Peru, and hiked the Inca Trail to get to Machu Picchu. <br><br>
+
+					Coming back to North America, I once again needed to save some money to prepare for my 5th semester in Hong Kong, and had to somehow get from L.A to Vancouver to reach my flight. Along the way I worked at an organic chicken farm in California, and backpacked through the Canadian Rockies to get there both within my budget, and on time. For a whole week I survived with 4 cent ramen packets and overnight greyhounds. In semester 5 I studied in Hong Kong, which really opened my eyes at the difference in culture to what I was used to. In almost every class I was required to work in a group, and this really taught me how to synergise within a team of high diversity. <br><br>
+
+					Coming back to Australia I joined the labour force to repay the enormous debt I accumulated overseas. I still had one semester to go at university, so working full time really gave experience in time management. I had never worked in a field like this before and was forced adapt to a very different environment to what I was used to. I did not let this get in the way, and was quickly given more responsibilities; impressing my superiors with my ability to think outside of the box. I worked  at the level of a full-time restoration technician, while completing my final semester at QUT.<br>
+				</p>
+			</div>
+
+			<div class="btn-toolbar" role="toolbar" aria-label="...">
+				<div class="btn-group mr-2" role="group" aria-label="First group">
+					<button type="button" class="btn btn-secondary" onclick="show1()">1</button>
+					<button type="button" class="btn btn-secondary" onclick="show2()">2</button>
+				</div>
+			</div>
+
+			<script>
+			function show1() {
+				document.getElementById('page1').style.display = "block";
+				document.getElementById('page2').style.display = "none";
+			}
+			function show2() {
+				document.getElementById('page1').style.display = "none";
+				document.getElementById('page2').style.display = "block";
+			}
+			</script>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+</html>
